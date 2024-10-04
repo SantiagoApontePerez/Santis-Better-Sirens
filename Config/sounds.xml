@@ -1,0 +1,12 @@
+<configs>
+    <append xpath="/Sounds">
+        <!-- First Siren -->
+        <SoundDataNode name="santiSiren1"> <AudioSource name="Sounds/AudioSource_Amb_Small"/>
+	    <AudioClip ClipName="#@modfolder:Resources/SantiSirens.unity3d?santiSiren1" Loop="true"/>
+	    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0"/> </SoundDataNode>
+        <!-- Second Siren -->
+        <SoundDataNode name="santiSiren2"> <AudioSource name="Sounds/AudioSource_Amb_Small"/>
+	    <AudioClip ClipName="#@modfolder:Resources/SantiSirens.unity3d?santiSiren2" Loop="true"/>
+	    <LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0"/> </SoundDataNode>
+    </append>
+</configs>

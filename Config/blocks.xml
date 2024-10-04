@@ -1,0 +1,64 @@
+<configs>
+    <append xpath="/blocks">
+        <!-- First Siren Block -->
+        <block name="SantiSirenIndoor">
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="speaker"/>
+            <property name="Class" value="Speaker"/>
+            <property name="PlaySound" value="santiSiren1"/>
+            <property name="Material" value="Mmetal_weak"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Electrical/speakerLoudWallPrefab"/> 
+            <property name="HandleFace" value="South"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="LootList" value="7"/>
+            <property name="RequiredPower" value="5"/>
+            <property name="DisplayType" value="blockElectrical"/>
+            <property name="Group" value="Science"/>
+            <property class="RepairItems">
+            <property name="resourceForgedIron" value="3"/>
+            <property name="resourceElectricParts" value="2"/>
+            </property>
+            <drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapIron" count="5,10" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="TakeDelay" value="5"/>
+            <property name="EconomicValue" value="72"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+            <property name="SortOrder1" value="B155"/>
+	        <property name="SortOrder2" value="0016"/>
+        </block>
+        <!-- Second Siren Block-->
+        <block name="SantiSiren1">
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="speaker"/>
+            <property name="Class" value="Speaker"/>
+            <property name="PlaySound" value="santiSiren2"/>
+            <property name="Material" value="Mmetal_weak"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/Electrical/speakerLoudWallPrefab"/> 
+            <property name="HandleFace" value="South"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="LootList" value="7"/>
+            <property name="RequiredPower" value="5"/>
+            <property name="DisplayType" value="blockElectrical"/>
+            <property name="Group" value="Science"/>
+            <property class="RepairItems">
+            <property name="resourceForgedIron" value="3"/>
+            <property name="resourceElectricParts" value="2"/>
+            </property>
+            <drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapIron" count="5,10" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="TakeDelay" value="5"/>
+            <property name="EconomicValue" value="72"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_electrical"/>
+            <property name="SortOrder1" value="B155"/>
+	        <property name="SortOrder2" value="0016"/>
+        </block>
+    </append>
+</configs>
